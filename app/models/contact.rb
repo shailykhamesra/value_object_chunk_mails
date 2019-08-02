@@ -10,7 +10,7 @@ class Contact < ActiveRecord::Base
   private
 
   def transfer_data
-    msg = Message.new(message).fetch_message
+    msg = Message.new(message).generate_message_chunks
     Email.new(self, msg).send_email
   end
 end

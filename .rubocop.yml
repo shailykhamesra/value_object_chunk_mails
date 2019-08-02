@@ -3,6 +3,9 @@ Metrics/LineLength:
   Max: 120
 Documentation:
   Enabled: false
+AllCops:
+  Excludes:
+    - db/schema.rb
 Metrics/BlockLength:
   Exclude:
     - 'config/environments/development.rb'

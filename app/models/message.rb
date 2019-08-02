@@ -5,7 +5,7 @@ class Message
     @message = message
   end
 
-  def fetch_message
+  def generate_message_chunks
     @message.scan(/\S.{1,100}(?!\S)/)
   end
 end
