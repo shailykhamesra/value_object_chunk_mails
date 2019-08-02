@@ -1,0 +1,8 @@
+Metrics/LineLength:
+  Enabled: false
+  Max: 120
+Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/development.rb'
