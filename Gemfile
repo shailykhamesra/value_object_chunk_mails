@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-
-source 'https://rubygems.org'
+gem 'active_model_serializers'
 gem 'listen'
 gem 'pg'
 gem 'puma', '~> 3.7'
