@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 gem 'active_model_serializers'
+gem 'draper'
 gem 'listen'
 gem 'pg'
 gem 'puma', '~> 3.7'

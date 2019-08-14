@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 class ContactsController < ApplicationController
+  def index
+    @contacts = Contact.all.decorate
+    respond_to do |format|
+      format.html { render :index }
+    end
+  end
+
   def create
     @contact = Contact.new(contact_params)
     @contact.save!
